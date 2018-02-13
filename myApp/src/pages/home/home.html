@@ -1,29 +1,44 @@
 <ion-header>
-<ion-navbar color="primary">
-  <ion-title>
-    Project Ionic
-  </ion-title>
-</ion-navbar>
+  <ion-navbar color="dark" center>
+    <ion-grid>
+      <ion-row>
+
+        <ion-title col-12>
+          Project Ionic
+        </ion-title>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
 </ion-header>
 
 <ion-content>
+  <ion-list justify-content-center="">
+    <ion-grid>
+      <ion-row>
 
-  <ion-list no-lines>
+        <ion-title col-12>
 
-    <ion-item>
-      <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="notifyTime" (ionChange)="timeChange($event)"></ion-datetime>
-    </ion-item>
+          <p>Godzina:</p>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="notifyTime"
+                        (ionChange)="timeChange($event)"></ion-datetime>
+        </ion-title>
+
+        <ion-item *ngFor="let day of days">
+          <ion-label>{{day.title}}</ion-label>
+          <ion-checkbox [(ngModel)]="day.checked" color="primary"></ion-checkbox>
+        </ion-item>
 
 
-    <ion-item *ngFor="let day of days">
-      <ion-label>{{day.title}}</ion-label>
-      <ion-checkbox [(ngModel)]="day.checked" color="primary"></ion-checkbox>
-    </ion-item>
+      </ion-row>
+    </ion-grid>
 
   </ion-list>
 
-  <button (click)="notification()" ion-button color="secondary">Notifications</button>
+  <div text-center>
 
+
+    <button (click)="notification()" ion-button color="danger">Notifications</button>
+  </div>
 </ion-content>
 
 <ion-footer>
