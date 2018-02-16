@@ -46,8 +46,7 @@ export class HomePage {
 
   notification() {
     this.localNotifications.schedule({
-      title: 'Test',
-      text: 'Text',
+      title: 'Test'
     });
   }
 }

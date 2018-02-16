@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="dark" center>
+    <ion-grid>
+      <ion-row>
+
+        <ion-title col-12>
+          Project Ionic
+        </ion-title>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-list justify-content-center="">
+
+
+    <ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <h2>Name: {{ item.name }}</h2>
+      <p>Age: {{ item.age }}</p>
+    </ion-item>
+
+  </ion-list>
+
+
+</ion-content>

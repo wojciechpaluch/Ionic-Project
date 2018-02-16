@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "5a873d681b61f3e1af874958",
+    "index": 0,
+    "picture": "http://placehold.it/32x32",
+    "age": 37,
+    "name": "Jimenez Flowers",
+    "gender": "male"
+  },
+  {
+    "_id": "5a873d682bfed7e00c70d1f2",
+    "index": 1,
+    "picture": "http://placehold.it/32x32",
+    "age": 34,
+    "name": "Jolene Foley",
+    "gender": "female"
+  },
+  {
+    "_id": "5a873d68d52b6dbf100bf409",
+    "index": 2,
+    "picture": "http://placehold.it/32x32",
+    "age": 40,
+    "name": "Jerri Wolfe",
+    "gender": "female"
+  },
+  {
+    "_id": "5a873d68fc4ef81896b6eff4",
+    "index": 3,
+    "picture": "http://placehold.it/32x32",
+    "age": 34,
+    "name": "Noreen Ruiz",
+    "gender": "female"
+  },
+  {
+    "_id": "5a873d68ed18e1f82984d45c",
+    "index": 4,
+    "picture": "http://placehold.it/32x32",
+    "age": 34,
+    "name": "Tonya Harrington",
+    "gender": "female"
+  }
+]
