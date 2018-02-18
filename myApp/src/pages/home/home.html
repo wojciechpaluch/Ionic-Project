@@ -2,9 +2,8 @@
   <ion-navbar color="dark" center>
     <ion-grid>
       <ion-row>
-
         <ion-title col-12>
-          Project Ionic
+          ReminderApp
         </ion-title>
       </ion-row>
     </ion-grid>
@@ -15,9 +14,7 @@
   <ion-list justify-content-center="">
     <ion-grid>
       <ion-row>
-
         <ion-title col-12>
-
           <p>Godzina:</p>
           <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="notifyTime"
                         (ionChange)="timeChange($event)"></ion-datetime>
@@ -37,7 +34,7 @@
   <div text-center>
 
 
-    <button (click)="notification()" ion-button color="danger">Notifications</button>
+    <button (click)="notification()" ion-button color="danger">Run App</button>
   </div>
 </ion-content>
 

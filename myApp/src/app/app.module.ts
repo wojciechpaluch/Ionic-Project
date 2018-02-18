@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { ListPage } from '../pages/list/list';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
+import { NewsPage } from '../pages/news/news';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ItemApi } from '../services/item-api.service';
 import { HttpModule } from '@angular/http';
@@ -20,7 +21,8 @@ import {LocalNotifications} from '@ionic-native/local-notifications';
     ListPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    NewsPage
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import {LocalNotifications} from '@ionic-native/local-notifications';
     ListPage,
     ContactPage,
     HomePage,
+    NewsPage,
     TabsPage
   ],
   providers: [
