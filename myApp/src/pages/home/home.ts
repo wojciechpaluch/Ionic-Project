@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {NavController, Platform, AlertController} from 'ionic-angular';
-import {LocalNotifications} from '@ionic-native/local-notifications';
+import { LocalNotifications } from '@ionic-native/local-notifications';
 import * as moment from 'moment';
 
 @Component({
@@ -46,7 +46,9 @@ export class HomePage {
 
   notification() {
     this.localNotifications.schedule({
-      title: 'Test'
+      id: 1,
+      title: 'OK',
+      text: 'App remember is working ',
     });
   }
 }
